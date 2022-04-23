@@ -1,12 +1,13 @@
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { StatusBar } from 'react-native'
 
 
 import Routes from "./src/pages/Dashboard";
 
 export default function App() {
   return (
-    <SafeAreaProvider>
+    <>
+    <StatusBar barStyle={'light-content'} backgroundColor="#8B10AE"/>
       <Routes />
-    </SafeAreaProvider>
+    </>
   );
 }
